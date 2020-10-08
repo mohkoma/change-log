@@ -3,9 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::group(['namespace' => 'Mohkoma\ChangeLog', 'prefix' => 'dev', 'middleware' => ['web', ...config('changelog.middleware.read')]], function() {
-
-    //dd(config('changelog.middleware.read'));
+Route::group(['namespace' => 'Mohkoma\ChangeLog', 'prefix' => 'dev', 'middleware' => config('changelog.middleware.read')], function() {
 
     // Show as view
     Route::get('changelog', "ChangelogController@show")->name('changelog.view');
