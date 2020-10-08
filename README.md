@@ -1,10 +1,14 @@
 # Laravel ChangeLog
 Add changelogs to your laravel project
 
-This allow you to add changelogs to your laravel app, it will create a json file for each release and then merge them as and show them as html file.
+This allow you to add changelogs to your laravel app, it will create a json file for each release and then merge them as one json object or show them as html file.
 The package provide also a simple form to create new log.
 
+## List
+
 ![the list of the logs](list.png)
+
+## Form
 
 ![the form of the logs](form.png)
 
@@ -18,19 +22,19 @@ You can install this package via composer using this command:
 ## Usage
 
 The package will automatically register itself.
-
 You can publish the config-file and the views with:
-
 `php artisan vendor:publish --provider="Mohkoma\ChangeLog\ChangeLogServiceProvider"`
 
-you can create new log through the package route `/dev/changelog/create/` and you can show them through `/dev/changelog`.
-Also you can get the data as json using `/dev/changelog/json`.
+You can publish the config-file and the views with:
+`php artisan vendor:publish --provider="Mohkoma\ChangeLog\ChangeLogServiceProvider"`
+
+## Routes
+
+`/dev/changelog/create/` for showing the form.
+`/dev/changelog` for showing the list of the logs.
+`/dev/changelog/json` show logs as a json object
 
 ## Configuration
-
-You can publish the config-file and the views with:
-
-`php artisan vendor:publish --provider="Mohkoma\ChangeLog\ChangeLogServiceProvider"`
 
 ```php
 <?php 
