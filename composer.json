@@ -1,0 +1,25 @@
+{
+    "name": "mohkoma/change-log",
+    "description": "Add changelogs to your laravel project",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohkoma",
+            "email": "mohkoma@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mohkoma\\ChangeLog\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mohkoma\\ChangeLog\\ChangelogServiceProvider"
+            ]
+        }
+    }
+}
