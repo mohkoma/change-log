@@ -1,13 +1,13 @@
 <?php 
 
-namespace Mohkoma\ChangeLog;
+namespace Mohkoma\ChangeLog\Controllers;
 
 use Mohkoma\ChangeLog\ChangeLog;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
 use Illuminate\Http\Request;
 
-class ChangelogController extends Controller
+class ChangeLogController extends Controller
 {
     /**
      *  Return the releases as Json data

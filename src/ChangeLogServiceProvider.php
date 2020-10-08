@@ -17,7 +17,7 @@ class ChangeLogServiceProvider extends ServiceProvider
             ], 'config');
         }
 
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'changelog');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'changelog');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
