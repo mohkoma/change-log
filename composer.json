@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mohkoma\\ChangeLog\\ChangelogServiceProvider"
+                "Mohkoma\\ChangeLog\\ChangeLogServiceProvider"
             ]
         }
     }
